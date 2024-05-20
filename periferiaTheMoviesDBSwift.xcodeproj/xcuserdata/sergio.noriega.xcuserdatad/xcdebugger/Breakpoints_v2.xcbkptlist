@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "EA968403-3E5B-426B-8C77-4CB9759CBFF7"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3EBD2EF5-3AB5-4195-B83D-52100C0373C9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "periferiaTheMoviesDBSwift/Api/APIManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "fetchPopularMovies(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2D9881D3-4ED6-4574-89C3-8398AE87D23B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "periferiaTheMoviesDBSwift/Popular/View/PopularViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2D9881D3-4ED6-4574-89C3-8398AE87D23B - 9fa1135ad1ce209b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "periferiaTheMoviesDBSwift.PopularViewController.tableView(_: __C.UITableView, cellForRowAt: Foundation.IndexPath) -&gt; __C.UITableViewCell"
+                  moduleName = "periferiaTheMoviesDBSwift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sergio.noriega/Desktop/Swift/periferiaTheMoviesDBSwift/periferiaTheMoviesDBSwift/Popular/View/PopularViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "83"
+                  endingLineNumber = "83"
+                  offsetFromSymbolStart = "1448">
+               </Location>
+               <Location
+                  uuid = "2D9881D3-4ED6-4574-89C3-8398AE87D23B - 9fa1135ad1ce2206"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "periferiaTheMoviesDBSwift.PopularViewController.tableView(_: __C.UITableView, cellForRowAt: Foundation.IndexPath) -&gt; __C.UITableViewCell"
+                  moduleName = "periferiaTheMoviesDBSwift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sergio.noriega/Desktop/Swift/periferiaTheMoviesDBSwift/periferiaTheMoviesDBSwift/Popular/View/PopularViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "94"
+                  endingLineNumber = "94"
+                  offsetFromSymbolStart = "1448">
+               </Location>
+               <Location
+                  uuid = "2D9881D3-4ED6-4574-89C3-8398AE87D23B - 9fa1135ad1ce20bc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "periferiaTheMoviesDBSwift.PopularViewController.tableView(_: __C.UITableView, cellForRowAt: Foundation.IndexPath) -&gt; __C.UITableViewCell"
+                  moduleName = "periferiaTheMoviesDBSwift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sergio.noriega/Desktop/Swift/periferiaTheMoviesDBSwift/periferiaTheMoviesDBSwift/Popular/View/PopularViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "1448">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FD1DBC2D-1573-4CF5-86F1-21246FDD840E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "periferiaTheMoviesDBSwift/Popular/View/PopularViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FD1DBC2D-1573-4CF5-86F1-21246FDD840E - 4bd77edd0569b6f7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "periferiaTheMoviesDBSwift.PopularViewController.searchBar(_: __C.UISearchBar, textDidChange: Swift.String) -&gt; ()"
+                  moduleName = "periferiaTheMoviesDBSwift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sergio.noriega/Desktop/Swift/periferiaTheMoviesDBSwift/periferiaTheMoviesDBSwift/Popular/View/PopularViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  uuid = "FD1DBC2D-1573-4CF5-86F1-21246FDD840E - 9fa1135ad1ce2038"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "periferiaTheMoviesDBSwift.PopularViewController.tableView(_: __C.UITableView, cellForRowAt: Foundation.IndexPath) -&gt; __C.UITableViewCell"
+                  moduleName = "periferiaTheMoviesDBSwift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sergio.noriega/Desktop/Swift/periferiaTheMoviesDBSwift/periferiaTheMoviesDBSwift/Popular/View/PopularViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
+                  offsetFromSymbolStart = "452">
+               </Location>
+               <Location
+                  uuid = "FD1DBC2D-1573-4CF5-86F1-21246FDD840E - 9fa1135ad1ce21a3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "periferiaTheMoviesDBSwift.PopularViewController.tableView(_: __C.UITableView, cellForRowAt: Foundation.IndexPath) -&gt; __C.UITableViewCell"
+                  moduleName = "periferiaTheMoviesDBSwift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sergio.noriega/Desktop/Swift/periferiaTheMoviesDBSwift/periferiaTheMoviesDBSwift/Popular/View/PopularViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "91"
+                  endingLineNumber = "91"
+                  offsetFromSymbolStart = "452">
+               </Location>
+               <Location
+                  uuid = "FD1DBC2D-1573-4CF5-86F1-21246FDD840E - 9fa1135ad1ce20d9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "periferiaTheMoviesDBSwift.PopularViewController.tableView(_: __C.UITableView, cellForRowAt: Foundation.IndexPath) -&gt; __C.UITableViewCell"
+                  moduleName = "periferiaTheMoviesDBSwift"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/sergio.noriega/Desktop/Swift/periferiaTheMoviesDBSwift/periferiaTheMoviesDBSwift/Popular/View/PopularViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "81"
+                  endingLineNumber = "81"
+                  offsetFromSymbolStart = "452">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CF911D87-FE38-4144-A7EB-C1AAE187D6BD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "periferiaTheMoviesDBSwift/Popular/View/PopularViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "setupBindings()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "271D54D0-3D96-4A42-A705-4D43A84B113C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "periferiaTheMoviesDBSwift/Popular/View/PopularViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "setupBindings()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AA68FB2A-033F-4653-83E8-16EB794333AD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "periferiaTheMoviesDBSwift/Popular/ViewModel/PopularViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "fetchPopularMovies()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
