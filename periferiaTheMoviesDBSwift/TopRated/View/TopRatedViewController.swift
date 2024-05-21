@@ -12,6 +12,7 @@ class TopRatedViewController: UIViewController {
     override func viewDidLoad() {
         debugPrint("Hola Top Rated View")
         super.viewDidLoad()
+        view.backgroundColor = .lightGray
 
         // Do any additional setup after loading the view.
     }

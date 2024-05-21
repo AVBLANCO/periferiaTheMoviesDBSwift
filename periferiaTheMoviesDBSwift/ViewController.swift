@@ -8,69 +8,50 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var segmentButtton: UISegmentedControl!
-    @IBOutlet weak var popularContainerView: UIView!
-    @IBOutlet weak var topRatedContainerView: UIView!
+    let popularView = PopularViewController()
+    let topRatedView = TopRatedViewController()
     
-    private var popularViewController: PopularViewController?
-//    private var popularViewController = PopularViewController()
-    private var topRatedViewController: TopRatedViewController?
-//    private var topRatedViewController = TopRatedViewController()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        segmentButtton.addTarget(self, action: #selector(selectionDidChange(_:)), for: .valueChanged)
-        setupView()
-    }
-
-    private func setupView() {
-        segmentButtton.selectedSegmentIndex = 0
-        popularContainerView?.isHidden = false
-        topRatedContainerView?.isHidden = true
-        loadViewControllers()
-    }  
-
-    private func loadViewControllers() {
-        // Cargar PopularViewController
-        let popularStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        if let popularVC = popularStoryboard.instantiateViewController(withIdentifier: "PopularViewController") as? PopularViewController {
-            popularViewController = popularVC
-            addChild(popularViewController!)
-//            popularViewController?.view.frame = popularContainerView!.bounds
-            if let popularContainerBounds = popularContainerView?.bounds {
-                popularViewController?.view.frame = popularContainerBounds
-            }
-            popularContainerView?.addSubview(popularViewController!.view)
-            popularViewController?.didMove(toParent: self)
-        }
         
-        // Cargar TopRatedViewController
-        let topRatedStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        if let topRatedVC = topRatedStoryboard.instantiateViewController(withIdentifier: "TopRatedViewController") as? TopRatedViewController {
-            topRatedViewController = topRatedVC
-            addChild(topRatedViewController!)
-//            topRatedViewController?.view.frame = topRatedContainerView.bounds
-            if let topRatedViewControllerBounds = topRatedContainerView?.bounds {
-                topRatedViewController?.view.frame = topRatedViewControllerBounds
-            }
-            topRatedContainerView?.addSubview(topRatedViewController!.view)
-            topRatedViewController?.didMove(toParent: self)
-        }
+        debugPrint("View Did load")
+        didTapSegment(segment: UISegmentedControl(items: ["Popular", "Top Rated"])) // Simula la selección del primer segmento
+        setup()
     }
-
-    @objc func selectionDidChange(_ sender: UISegmentedControl) {
-        updateView()
-    }
-
-    private func updateView() {
-        if segmentButtton.selectedSegmentIndex == 0 {
-            popularContainerView?.isHidden = false
-            topRatedContainerView?.isHidden = true
+    
+    
+    @IBAction func didTapSegment(segment: UISegmentedControl) {
+        popularView.view.isHidden = true
+        topRatedView.view.isHidden = true
+        
+        if segment.selectedSegmentIndex == 0 {
+            // mostrar el popular
+            popularView.view.isHidden = false
+            
         } else {
-            popularContainerView?.isHidden = true
-            topRatedContainerView?.isHidden = false
+            // mostrar el toprated
+            topRatedView.view.isHidden = false
         }
     }
+    
+    func setup(){
+        
+        addChild(popularView)
+        addChild(topRatedView)
+        
+        self.view.addSubview(popularView.view)
+        self.view.addSubview(topRatedView.view)
+        
+        popularView.didMove(toParent: self)
+        topRatedView.didMove(toParent: self)
+        
+        popularView.view.frame = self.view.bounds
+        topRatedView.view.frame = self.view.bounds
+        topRatedView.view.isHidden = true
+    }
+
 
 }
+

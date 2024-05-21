@@ -35,7 +35,7 @@
                             </connections>
                         </searchBar>
                         <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Yqd-se-OWx">
-                            <rect key="frame" x="0.0" y="49" width="393" height="685"/>
+                            <rect key="frame" x="0.0" y="49" width="393" height="756"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </tableView>
                     </subviews>
@@ -46,7 +46,7 @@
                         <constraint firstAttribute="trailing" secondItem="Yqd-se-OWx" secondAttribute="trailing" id="UF9-mV-qXD"/>
                         <constraint firstAttribute="trailing" secondItem="vPl-C4-jaT" secondAttribute="trailing" id="ejM-Z2-ClH"/>
                         <constraint firstItem="Yqd-se-OWx" firstAttribute="top" secondItem="vPl-C4-jaT" secondAttribute="bottom" constant="5" id="lg7-H6-g0f"/>
-                        <constraint firstAttribute="bottom" secondItem="Yqd-se-OWx" secondAttribute="bottom" id="oZa-k6-TPL"/>
+                        <constraint firstAttribute="bottom" secondItem="Yqd-se-OWx" secondAttribute="bottom" constant="-71" id="oZa-k6-TPL"/>
                         <constraint firstItem="vPl-C4-jaT" firstAttribute="top" secondItem="SzA-Ej-ROx" secondAttribute="top" id="tJz-ul-Q2i"/>
                     </constraints>
                 </view>
