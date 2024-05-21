@@ -18,11 +18,11 @@ The project consists of the following components:
 - **Popular:** Displays a list of popular movies.
 - **DetailView:** Displays the details of a single movie.
 
-## Images
-![Image from Dropbox](https://www.dropbox.com/scl/fi/14sfhsr4yew5aurmvc17j/Captura-de-pantalla-2024-05-20-a-la-s-10.41.56-p.-m..png?rlkey=jie1kvyp5ue1966w73q8qcvl0&st=adpjvazx&dl=0)
+# Images
+![Image from Google Drive](https://drive.google.com/uc?id=1lkOynGUYDt1HbpaEzGezbERY0EAImvnx)
 
 ## Video
-[Video from Dropbox](https://www.dropbox.com/scl/fi/hpbv58uqzz22awg88i6pt/Simulator-Screen-Recording-iPhone-15-Pro-2024-05-20-at-21.34.18.mp4?rlkey=uyb24o149ypwj9981tk240qhr&st=7rd5xub0&dl=0)
+[Video from Google Drive](https://drive.google.com/uc?id=12jjVst0WiJOOyuYcID1T2WrCZQOx4K97)
 
 ## Testing
 The project includes unit tests for the following components:

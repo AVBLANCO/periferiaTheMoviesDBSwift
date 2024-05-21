@@ -11,6 +11,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController" customModule="periferiaTheMoviesDBSwift" customModuleProvider="target">
             <connections>
+                <outlet property="descriptionMovie" destination="fCK-0m-mpM" id="n8y-TZ-InM"/>
+                <outlet property="imageMovie" destination="LOz-i9-3UD" id="FVE-bm-ao8"/>
+                <outlet property="labelAverague" destination="1d7-dZ-3ZQ" id="7WH-GX-Qqc"/>
+                <outlet property="labelLenguague" destination="Tob-7e-QDA" id="b7v-H2-bJD"/>
+                <outlet property="titleMovie" destination="joN-Rz-umk" id="uej-Mf-OY8"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

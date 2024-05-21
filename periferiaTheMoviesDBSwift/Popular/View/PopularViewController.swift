@@ -99,6 +99,19 @@ extension PopularViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // Aselección de una película en la tabla, por ejemplo, mostrar detalles de la película.
+        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+            let selectedMovie: Movie
+            if isSearching {
+                selectedMovie = filteredMovies[indexPath.row]
+            } else {
+                selectedMovie = viewModel.popularMovies[indexPath.row]
+            }
+            
+            guard let detailVC = storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController else {
+                return
+            }
+            detailVC.movie = selectedMovie
+            navigationController?.pushViewController(detailVC, animated: true)
+        }
     }
 }
