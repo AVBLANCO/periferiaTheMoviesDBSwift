@@ -24,12 +24,25 @@ class TopRatedViewController: UIViewController {
     }
     
     func setupCollectionView() {
-         collectionView.delegate = self
-         collectionView.dataSource = self
-         
-         let nib = UINib(nibName: "TopRatedCollectionViewCell", bundle: nil)
-         collectionView.register(nib, forCellWithReuseIdentifier: "TopRatedCell")
-     }
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        
+        let nib = UINib(nibName: "TopRatedCollectionViewCell", bundle: nil)
+        collectionView.register(nib, forCellWithReuseIdentifier: "TopRatedCell")
+        
+        // Configure the layout
+        if let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+            let spacing: CGFloat = 10
+            let itemsPerRow: CGFloat = 3
+            let totalSpacing = (itemsPerRow - 1) * spacing
+            let itemWidth = (collectionView.bounds.width - totalSpacing) / itemsPerRow
+            let itemHeight = itemWidth * 1.5 // Adjust the height as needed
+            
+            layout.itemSize = CGSize(width: itemWidth, height: itemHeight)
+            layout.minimumInteritemSpacing = spacing
+            layout.minimumLineSpacing = spacing
+        }
+    }
 
     func setupBindings() {
          viewModel.$topRatedMovies
