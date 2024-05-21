@@ -17,6 +17,8 @@ class PopularViewController: UIViewController {
     let viewModel = PopularViewModel()
     private var cancellables = Set<AnyCancellable>()
     
+    private var filteredMovies: [Movie] = []
+    private var isSearching: Bool = false
     //    var movies: [Movie] = []
     
     override func viewDidLoad() {
@@ -71,20 +73,26 @@ class PopularViewController: UIViewController {
 
 extension PopularViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        // Aquí puedes realizar la búsqueda de películas basada en el texto ingresado en la barra de búsqueda.
-        // Puedes actualizar la tabla con los resultados de la búsqueda.
+        if searchText.isEmpty {
+            isSearching = false
+            filteredMovies = []
+        } else {
+            isSearching = true
+            filteredMovies = viewModel.popularMovies.filter { $0.title.lowercased().contains(searchText.lowercased()) }
+        }
+        tableView.reloadData()
     }
 }
 
 extension PopularViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //        return movies.count
-        return viewModel.popularMovies.count
+        return isSearching ? filteredMovies.count : viewModel.popularMovies.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell", for: indexPath) as! PopularTableViewCell
-        let movie = viewModel.popularMovies[indexPath.row]
+        let movie = isSearching ? filteredMovies[indexPath.row] : viewModel.popularMovies[indexPath.row]
         cell.configure(with: movie)
         debugPrint("Configuring cell for movie: \(movie.title)")
         return cell

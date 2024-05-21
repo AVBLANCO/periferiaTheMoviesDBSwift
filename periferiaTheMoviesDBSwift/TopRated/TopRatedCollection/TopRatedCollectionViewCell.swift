@@ -29,6 +29,7 @@ class TopRatedCollectionViewCell: UICollectionViewCell {
     
     func configure(with movie: Movie) {
         nameMoview.text = movie.title
+        debugPrint("Configuring cell for movie: \(movie.title)")
         
         if let posterPath = movie.posterPath, let url = APIManager.shared.getImageURL(path: posterPath) {
             cancellable = imageLoader.$image.sink { [weak self] image in
