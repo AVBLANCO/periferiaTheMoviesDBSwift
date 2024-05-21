@@ -54,6 +54,9 @@ class PopularViewController: UIViewController {
         tableView?.delegate = self
         tableView?.dataSource = self
         // Registrar la celda personalizada
+        tableView?.estimatedRowHeight = 160 // Estimation for row height
+        tableView?.rowHeight = UITableView.automaticDimension
+        
         let nib = UINib(nibName: "PopularTableViewCell", bundle: nil)
         tableView?.register(nib, forCellReuseIdentifier: "MovieCell")
     }
@@ -82,8 +85,7 @@ extension PopularViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell", for: indexPath) as! PopularTableViewCell
         let movie = viewModel.popularMovies[indexPath.row]
-        cell.titleMovie.text = movie.title
-        cell.averagueMovie.text = "Average: \(movie.voteAverage)"
+        cell.configure(with: movie)
         debugPrint("Configuring cell for movie: \(movie.title)")
         return cell
     }

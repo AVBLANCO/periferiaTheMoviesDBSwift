@@ -6,19 +6,21 @@
 //
 
 import Foundation
+import Combine
 
-class TopRatedViewModel {
-    var topRatedMovies: [Movie] = []
-    var didUpdateMovies: (() -> Void)?
+class TopRatedViewModel: ObservableObject {
+    @Published var topRatedMovies: [Movie] = []
+    private var cancellables = Set<AnyCancellable>()
 
     func fetchTopRatedMovies() {
         APIManager.shared.fetchMovies(endpoint: "top_rated") { [weak self] result in
             switch result {
             case .success(let movies):
-                self?.topRatedMovies = movies
-                self?.didUpdateMovies?()
+                DispatchQueue.main.async {
+                    self?.topRatedMovies = movies
+                }
             case .failure(let error):
-                print(error)
+                print("Error fetching top-rated movies: \(error)")
             }
         }
     }
